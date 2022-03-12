@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+E:\web em camadas\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3308620571.index
+986688450.index
+3838006238.index
+2148170887.index

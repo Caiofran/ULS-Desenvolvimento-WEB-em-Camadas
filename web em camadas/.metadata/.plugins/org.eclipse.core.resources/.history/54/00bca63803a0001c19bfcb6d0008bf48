@@ -1,0 +1,30 @@
+package control;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class ServidorEcho {
+	
+	private ServerSocket scksServidor;
+	
+	public ServidorEcho() throws IOException {
+		this.scksServidor = new ServerSocket(4000);
+		
+		for(;;) {
+			Socket sckEcho; 
+			InputStreamReader isr;
+			BufferedReader entrada;
+			PrintWriter saida;
+			
+			sckEcho = this.scksServidor.accept();
+			isr = new InputStreamReader(sckEcho.getInputStream());
+			entrada = new BufferedReader(isr);
+			saida = new PrintWriter(sckEcho.getOutputStream(), true);
+			
+		}
+	}
+}

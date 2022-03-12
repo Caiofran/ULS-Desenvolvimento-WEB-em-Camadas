@@ -1,0 +1,11 @@
+package control;
+
+public class ServidorEcho {
+	
+	private ServerSocket scksServidor;
+	
+	public ServidorEcho() throws IOException {
+		this.scksServidor = new ServeSocket(4000);
+		
+	}
+}
